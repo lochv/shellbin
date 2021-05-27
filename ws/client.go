@@ -5,6 +5,8 @@ import (
 	"github.com/gorilla/websocket"
 	"log"
 	"net/http"
+	"shellbin/internal/logger"
+
 	// "strings"
 	"time"
 )
@@ -37,7 +39,7 @@ func (c Client) read(closeChan chan string) {
 		_, message, err := c.conn.ReadMessage()
 		if err != nil {
 			if websocket.IsUnexpectedCloseError(err, websocket.CloseGoingAway, websocket.CloseAbnormalClosure) {
-				log.Printf("error: %v", err)
+				logger.Write(err.Error())
 			}
 			break
 		}
