@@ -1,0 +1,4 @@
+tcp-port: 443
+udp-port: 4444
+http-port: 80
+debug: true
