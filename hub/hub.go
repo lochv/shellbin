@@ -29,8 +29,8 @@ func (h *hub) Run() {
 		select {
 		case agent := <-h.agentChan:
 			logger.Write("new agent with token ", agent.Token())
-			h.agents[agent.Token()] = agent
 			if wsClient, ok := h.wsClients[agent.Token()]; ok {
+				h.agents[agent.Token()] = agent
 				go func() {
 					writeToAgentChan := agent.GetWriteChan()
 					for {
@@ -51,6 +51,8 @@ func (h *hub) Run() {
 						}
 					}
 				}()
+			} else {
+				agent.Disconnect()
 			}
 		case wsClient := <-h.wsClientChan:
 			logger.Write("new ws client with token ", wsClient.Token)
