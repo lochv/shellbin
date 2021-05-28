@@ -7,16 +7,15 @@
     <script src="/static/addons/fit/fit.js"></script>
     <script type="text/javascript">
         function token(length) {
-            var result = [];
-            var characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+            var result           = [];
+            var characters       = 'abcdefghijklmnopqrstuvwxyz0123456789';
             var charactersLength = characters.length;
-            for (var i = 0; i < length; i++) {
+            for ( var i = 0; i < length; i++ ) {
                 result.push(characters.charAt(Math.floor(Math.random() *
                     charactersLength)));
             }
             return result.join('');
         }
-
         function main() {
             prefix = "";
             protocol = "ws";

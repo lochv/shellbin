@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b07bd7aa-5607-41a9-930d-e284633d8583" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/releases/template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/releases/template/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/addons/fit/fit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/addons/fit/fit.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/terminal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/xterm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/xterm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/xterm.js.map" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="$PROJECT_DIR$/../../../../../Program Files/Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1t9TP7dKtZJ7Vt5wcY2YXTXcJmY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hawk\Documents\dev\shellbin\releases\template" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hawk\Documents\dev\shellbin" />
+      <recent name="C:\Users\hawk\Documents\dev\shellbin\template" />
+      <recent name="C:\Users\hawk\Documents\dev\shellbin\releases\template" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="shellbin" />
+      <working_directory value="$PROJECT_DIR$/releases" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/cmd/main.go" />
+      <package value="shellbin" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="734" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622180994807">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="734" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1622180994807" />
+  </component>
+</project>
