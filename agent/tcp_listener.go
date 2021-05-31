@@ -1,8 +1,8 @@
 package agent
 
 import (
-	"log"
 	"net"
+	"shellbin/internal/logger"
 )
 
 type tcpListener struct {
@@ -21,7 +21,7 @@ func (t tcpListener) Listen() {
 	for {
 		c, err := l.Accept()
 		if err != nil {
-			log.Println(err.Error())
+			logger.Write(err.Error())
 		}
 		go t.newConnHandler(c)
 	}
@@ -31,11 +31,12 @@ func (t tcpListener) newConnHandler(conn net.Conn) {
 	buff := make([]byte, 16)
 	n, err := conn.Read(buff)
 	if err != nil {
-		log.Println(err.Error())
+		logger.Write(err.Error())
 		conn.Close()
 	}
 	if n != 16 {
 		conn.Close()
+		return
 	}
 	c := tcpClient{
 		conn:      conn,
