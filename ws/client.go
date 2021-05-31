@@ -81,9 +81,11 @@ func WsHandler(wsChan chan Client, closeChan chan string, w http.ResponseWriter,
 	}
 	_, buff, err := conn.ReadMessage()
 	if err != nil {
+		conn.Close()
 		return
 	}
 	if len(string(buff)) != 16 {
+		conn.Close()
 		return
 	}
 	c := Client{
